@@ -193,7 +193,7 @@ button:hover {
 h3 {
   font-family: "space mono", Arial, Helvetica, sans-serif;
   background-color: var(--color-three);
-  border-radius: 5%;
+  border-radius: 5px;
   display: inline-block;
   padding: 5px 10px;
   color: var(--color-one);
@@ -203,6 +203,7 @@ h3 {
 
 section p {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  line-height: 140%;
 }
 
 #code-wars {
@@ -217,7 +218,7 @@ a {
 
 #me,
 #gus, 
-#me-star {
+#painting {
   width: 130px;
   padding: 20px;
   margin: 10px;
@@ -244,12 +245,18 @@ a {
   padding: 5px;
   margin: 5px;
   cursor: pointer;
+  transition: all .2s ease-in-out; 
 }
 
 .carousel-hidden {
   display: none;
-
 }
+  
+.fa-chevron-left:hover, 
+.fa-chevron-right:hover { 
+  transform: scale(1.8); 
+  }
+
 
 footer {
   text-align: center;
@@ -354,7 +361,7 @@ h3 {
 
 #me, 
 #gus,
-#me-star {
+#painting {
   width: 250px;
   height: 300px;
   padding: 20px;

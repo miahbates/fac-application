@@ -44,7 +44,7 @@ const rightArrow = document.getElementById("right-arrow")
 const leftArrow = document.getElementById("left-arrow")
 const image1 = document.getElementById("me")
 const image2 = document.getElementById("gus")
-const image3 = document.getElementById("me-star")
+const image3 = document.getElementById("painting")
 
 // When clicking right arrow, hide pic 1 and show pic 2. (1st attempt)
 // leftArrow.addEventListener("click", function imageCarouselLeft() {
