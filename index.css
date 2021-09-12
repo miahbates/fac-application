@@ -1,0 +1,375 @@
+/* CSS for mobile design */
+
+/* 
+colour pallete ideas 
+https://coolors.co/805d93-f49fbc-ffd3ba-9ebd6e-169873 - pink/purple/green
+https://coolors.co/e2eb98-93a392-adbf97-bad9a2-9dc4b5 - greens 
+https://coolors.co/6c464f-9e768f-9fa4c4-b3cdd1-c7f0bd - my fave 
+
+CSS variables info - 
+https://dev.to/ditarahma08/dark-mode-with-css-variable-1p57 
+https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+
+*/
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.mode-1 {
+  --color-one: #19323C;
+  --color-two: #BFEDC1;
+  --color-three: #FFCAB1;  
+  --color-four: white; /* #EE964B; */
+  --color-five: #7A6263;
+}
+
+.mode-2 {
+  --color-one: #B3CDD1;
+  --color-two: white;
+  --color-three: #C97D60; /* #C7F0BD; */
+  --color-four: #6C464F;
+  --color-five: #9E768F;
+}
+
+.mode-3 {
+  --color-one: #F7DBA7;
+  --color-two: #251605;
+  --color-three: #C57B57;
+  --color-four: #EE964B;
+  --color-five: #9CAFB7;
+}
+
+
+.mode-4 {
+  --color-one: #190B28;
+  --color-two: #9B9987;
+  --color-three: #EFA9AE;
+  --color-four: #E55381;
+  --color-five: #685762;
+}
+
+.mode-5 {
+  --color-one: #FAF9F6;
+  --color-two: #7EBC89;
+  --color-three: #FE5D26;
+  --color-four: #F2C078;
+  --color-five: #C1DBB3;
+}
+
+body {
+  background-color: var(--color-one);
+  margin: 0;
+}
+
+nav {
+  color: var(--color-two); 
+  width: 100vw;
+  position: sticky;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo span {
+  padding: 4px;
+  margin: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.navlist ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navlist li {
+  padding: 4px;
+  margin: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: background-color .2s, color .2s;
+}
+
+.navlist li:hover {
+  color: var(--color-one); 
+  background-color: var(--color-three);
+  cursor: pointer;
+}
+
+.intro {
+  margin: 0 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.small-intro {
+  font-family: "space mono";
+  font-size: 1.3rem;
+  color: var(--color-two);
+  margin: 30px 0 0 0;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: var(--color-three);
+  margin:0;
+  padding: 5px;
+}
+
+h2, p {
+  font-family: "space mono", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-two);
+  margin: 0;
+  padding: 10px 5px;
+
+}
+
+h2 {
+  background-color: var(--color-five); 
+  color: white;
+  display:inline-block;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  padding: 5px;
+  border:0.16em solid var(--color-three);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: var(--color-three);
+  text-align:center;
+  transition: background-color .2s, color .2s;
+  background: transparent;
+  width: 60vw;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--color-one);
+  border-color:var(--color-one);
+  background-color: var(--color-two);
+}
+
+.fab {
+  padding: 10px 20px;
+  color: var(--color-four);
+  font-size: 2.5rem;
+}
+
+.left-info, .right-info {
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  border-bottom: var(--color-four) 2px solid;
+}
+
+h3 {
+  font-family: "space mono", Arial, Helvetica, sans-serif;
+  background-color: var(--color-three);
+  border-radius: 5%;
+  display: inline-block;
+  padding: 5px 10px;
+  color: var(--color-one);
+  font-size: 1.3rem;
+  margin-top: 50px;
+}
+
+section p {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+#code-wars {
+  height: 20px;
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#me,
+#gus, 
+#me-star {
+  width: 130px;
+  padding: 20px;
+  margin: 10px;
+  border: var(--color-four) 2px solid;
+}
+
+.img-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-click {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--color-four);
+  font-size: 2rem;
+}
+
+.fa-chevron-left, 
+.fa-chevron-right {
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel-hidden {
+  display: none;
+
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 20px;
+  border-top: var(--color-three) 2px solid;
+}
+
+.last-para {
+  padding: 10px;
+  font-family:
+}
+
+  /* border-top: var(--color-three) 2px solid; */
+  /* background-color: var(--color-three);
+  color: var(--color-one); */
+
+
+
+/* CSS larger screen */
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.initials, 
+.fas.fa-laptop-code {
+  font-size: 2rem;
+}
+
+.navlist ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.navlist li {
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-right: solid 2px var(--color-three);
+  margin-left: 40px;
+}
+
+.intro {
+  margin: 0 50px;
+  padding: 50px;
+}
+
+
+.small-intro {
+  font-size: 1.8rem;
+  margin: 20px 0 0 0;
+}
+
+button {
+  width: 40vw;
+  padding: 20px;
+  margin: 100px 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.8rem; 
+} 
+
+h3 {
+  font-size: 1.6rem;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-info, .left-info {
+  width: 60vw;
+  margin: 50px 100px;
+}
+
+#me, 
+#gus,
+#me-star {
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+}
+
+.img-me {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-click {
+  justify-content: center;
+}
+
+footer {
+  margin: 50px 0;
+}
+}
