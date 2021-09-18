@@ -257,6 +257,13 @@ a {
   transform: scale(1.8); 
   }
 
+#toplantz {
+  height: 200px;
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
 
 footer {
   text-align: center;
@@ -374,6 +381,11 @@ h3 {
 
 .icon-click {
   justify-content: center;
+}
+
+#toplantz {
+  height: 350px;
+  width: 600px;
 }
 
 footer {

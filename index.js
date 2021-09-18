@@ -37,8 +37,8 @@ colorModeButton.addEventListener("click", function changeMode() {
 // })
 
 
-// Img carousel 
-// grab, right/left buttons, images from html and store in variables.
+// Image carousel 
+// Grab, right/left buttons, images from html and store in variables.
 
 const rightArrow = document.getElementById("right-arrow")
 const leftArrow = document.getElementById("left-arrow")
@@ -47,6 +47,7 @@ const image2 = document.getElementById("gus")
 const image3 = document.getElementById("painting")
 
 // When clicking right arrow, hide pic 1 and show pic 2. (1st attempt)
+
 // leftArrow.addEventListener("click", function imageCarouselLeft() {
 //   if (image1.classList.contains("carousel-hidden")) {
 //     image1.classList.remove("carousel-hidden");
