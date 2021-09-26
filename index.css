@@ -221,7 +221,7 @@ a {
 #painting {
   width: 130px;
   padding: 20px;
-  margin: 10px;
+  margin: 0 auto;
   border: var(--color-four) 2px solid;
 }
 
@@ -248,8 +248,23 @@ a {
   transition: all .2s ease-in-out; 
 }
 
+.carousel {
+  display: grid;
+}
+
+.carousel > * {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.parent-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .carousel-hidden {
-  display: none;
+  opacity: 0;
+  transition: opacity .2s;
 }
   
 .fa-chevron-left:hover, 
@@ -374,12 +389,15 @@ h3 {
   padding: 20px;
 }
 
-.img-me {
+.para-and-carousel {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.icon-click {
+.parent-carousel {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
