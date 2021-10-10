@@ -1,5 +1,5 @@
 # Founders and Coders application website 
-## [*Click here*](https://miahbates.github.io/fac-entry-project/) to check out my page. :sparkles:
+## [*Click here*](https://miahbates.github.io/portfolio/) to check out my page. :sparkles:
 
 ![Image 09-10-2021 at 16 34](https://user-images.githubusercontent.com/78933903/136665205-00507cf3-3d3f-4d99-b984-b4c64fee4314.png)
 
